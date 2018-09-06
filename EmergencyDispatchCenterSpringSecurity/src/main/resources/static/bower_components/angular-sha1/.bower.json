@@ -1,0 +1,17 @@
+{
+  "name": "angular-sha1",
+  "main": "sha1.js",
+  "dependencies": {
+    "angular": "~1.3.8"
+  },
+  "homepage": "https://github.com/dday34/angular-sha1",
+  "_release": "3d2058ae13",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3d2058ae130320f9971c4a087f6439957d6d1369"
+  },
+  "_source": "https://github.com/dday34/angular-sha1.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/dday34/angular-sha1.git"
+}

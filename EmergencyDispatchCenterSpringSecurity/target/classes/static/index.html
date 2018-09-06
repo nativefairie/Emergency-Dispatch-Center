@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Emergency Dispatch Center</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favico.ico" type="image/x-icon" />
+    <!-- endbuild -->
+  </head>
+  <body ng-app="frontendApp">
+  
+    <div class="container">
+      <div class="navbar">
+        <div ng-include="'components/menu/menu.html'" ng-controller="MenuController"></div>
+        <h3 class="text-muted">Emergency Dispatch Center</h3>
+        <img src=" images/logo.png" width="100px">
+      </div>
+
+      <div class="container" ng-view></div>
+    </div>
+
+    <!-- build:js(.) components/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) components/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-sha1/sha1.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) components/components.js -->
+    <script src="components/app.js"></script>
+    <script src="components/login/loginService.js"></script>
+    <script src="components/login/login.js"></script>
+    <script src="components/acceptCall/acceptCall.js"></script>
+    <script src="components/acceptCall/acceptCallService.js"></script>
+    <script src="components/forwardCall/forwardCall.js"></script>
+    <script src="components/forwardCall/forwardCallService.js"></script>
+    <script src="components/manageReport/manageReport.js"></script>
+    <script src="components/manageReport/manageReportService.js"></script>
+    <script src="components/manageReport/updateReport.js"></script>
+    <script src="components/viewLog/viewLog.js"></script>
+    <script src="components/viewLog/viewLogService.js"></script>
+    <script src="components/menu/menu.js"></script>
+    <!-- endbuild -->
+</body>

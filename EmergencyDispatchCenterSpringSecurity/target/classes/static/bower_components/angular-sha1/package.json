@@ -1,0 +1,31 @@
+{
+  "name": "angular-sha1",
+  "version": "0.0.0",
+  "description": "Angular Wrapper around https://github.com/chrisveness/crypto/blob/master/sha1.js implementation of sha1",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "SHA-1",
+  ],
+  "author": [
+    {
+      "name": "Damien Sendner",
+      "email": "damien.sendner@gmail.com",
+      "url": "www.damiensendner.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dday34/angular-sha1.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "angular": "~1.3.8"
+  }
+}

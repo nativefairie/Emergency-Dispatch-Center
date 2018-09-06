@@ -1,0 +1,40 @@
+<h1>Forward Call</h1>
+<div class="container" ng-if="!shouldDisplayForwardCall()">
+    <p>You dont have sufficient rights to view this page</p>
+</div>
+<div class="container" ng-if="shouldDisplayForwardCall()">
+    <div ng-if="!assignedOperation">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Priority</th>
+                    <th>Street Number</th>
+                    <th>Country City PostalCode</th>
+                    <th>What</th>
+                    <th>Who</th>
+                    <th>Additional Info</th>
+                    <th></th>z
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="op in operations">
+                    <td>{{op.priority}}</td>
+                    <td>{{op.street}} {{op.number}}</td>
+                    <td>{{op.country}} {{op.city}} {{op.postalCode}}</td>
+                    <td>{{op.what}}</td>
+                    <td>{{op.who}}</td>
+                    <td>{{op.additionalInfo}}</td>
+                    <td><button class="btn btn-default" ng-click="takeOperation(op)">Take</button></td>
+                </tr>
+                <tr ng-if="operations.length == 0">
+                    <td colspan="7">
+                        No operations available...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row" ng-if="assignedOperation">
+        <button class="btn btn-lg" ng-click="finishOperation()">Finish Operation</button>
+    </div>
+</div>

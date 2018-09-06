@@ -1,0 +1,19 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin-bottom: 60px;
+}
+
+body > .container {
+    padding: 60px 15px 0;
+}
+
+code {
+    font-size: 80%;
+}
